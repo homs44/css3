@@ -1,0 +1,38 @@
+상속 여부
+width/height	no
+margin	no
+padding	no
+border	no
+box-sizing	no
+display	no
+visibility	yes
+opacity	yes
+background	no
+font	yes
+color	yes
+line-height	yes
+text-align	yes
+vertical-align	no
+text-decoration	no
+white-space	yes
+position	no
+top/right/bottom/left	no
+z-index	no
+overflow	no
+float	no
+
+
+우선순위
+
+1. head 요소 내의 style 요소
+2. <link> 로 연결된 CSS 파일
+3. 브라우저 디폴트 스타일시트
+
+
+
+1. 속성 값 뒤에 !important 를 붙인 속성
+2. HTML에서 style을 직접 지정한 속성
+3. #아이디 로 지정한 속성
+4. .클래스, :추상클래스 로 지정한 속성
+5. 태그이름 으로 지정한 속성
+6. 상위 객체에 의해 상속된 속성

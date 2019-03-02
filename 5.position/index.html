@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .bg1 {
+            background-color: crimson;
+            color: white;
+        }
+
+        .bg2 {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .static-box {
+            position: static;
+
+        }
+
+        .relative-box {
+            position: relative;
+        }
+
+        .absolute-box {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .left-top {
+            left: 10px;
+            top: 10px;
+        }
+
+        .fixed-box {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        .z2 {
+            z-index: 2;
+        }
+
+        .z1 {
+            z-index: 1;
+        }
+
+        .bg3 {
+            background-color: lightblue;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        .container {
+            width: 420px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            /*
+                visible : 영역 부분을 벗어나도 표시 (기본 값)
+                hidden : 영역을 벗어나면 자름
+                scroll & auto : 영역을 벗어나면 스크롤 
+            */
+            height: 200px;
+            white-space: nowrap;
+        }
+
+        .container>div {
+            display: inline-block;
+            height: 180px;
+            width: 180px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class='invisible'>
+        <h1>position</h1>
+        <div>
+            <div class='bg1 static-box'> static</div>
+            <br>
+            <br>
+            <div class='bg2'>
+                <div class='bg1 relative-box left-top'>
+                    relative
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class='bg2 static-box'>
+                <div class='bg1 absolute-box'>
+                    Absolute
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class='bg2 relative-box'>
+                <div class='bg1 absolute-box left-top'>
+                    Absolute
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class='bg2 fixed-box'>
+                <div class='bg1 fixed-box'>
+                    Fixed
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section class='visible'>
+        <h1>z-index</h1>
+        <p>position이 static이 아닌 것만 적용됨</p>
+        <div>
+            <div class='bg2 relative-box'>
+                <div class='bg1 absolute-box left-top z2'>
+
+                </div>
+                <div class='bg3 absolute-box left-top z1'>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+    <section class='invisible'>
+        <h1>overflow</h1>
+        <div class='container bg2'>
+            <div class='bg1'>
+
+            </div>
+            <div class='bg1'>
+
+            </div>
+            <div class='bg1'>
+
+            </div>
+            <div class='bg1'>
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

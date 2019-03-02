@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .bg {
+            background-image: url("/background/bg.jpg");
+        }
+
+        div {
+            padding: 16px;
+        }
+
+        .no-repeat {
+            background-repeat: no-repeat
+                /*background-repeat: repeat-x*/
+                /*background-repeat: repeat-y*/
+        }
+
+        .repeat-x {
+            background-repeat: repeat-x
+        }
+
+        .repeat-y {
+            background-repeat: repeat-y
+        }
+
+        .size-px {
+            background-size: 150px 100px;
+        }
+
+        .size-percent {
+            background-size: 100% 100%;
+        }
+
+        .size-cover {
+            background-size: cover;
+        }
+
+        .size-contain {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .attachment {
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .position { 
+            background-position: center;
+            /*
+            top;
+            bottom;
+            center;
+            left;
+            right;
+            10% 10%;
+            10px 10px;
+            */
+        }
+        .color{
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>bg</h1>
+    <div class='bg'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+    <h1>repeat</h1>
+    <div class='bg repeat'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+
+    <h1>size</h1>
+    <div class='bg size-px'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+
+    <div class='bg size-percent'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+
+    <div class='bg size-cover'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+
+    <div class='bg size-contain'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+    
+    <h1>attachment</h1>
+    <div class='bg attachment'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+
+    <h1>position</h1>
+    
+    <div class='bg position'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+    
+    <h1>color</h1>
+    
+    <div class='color'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </div>
+    
+    
+    <br>
+    <br>
+    <br>
+    <h1>Shorthand</h1>
+    <h3>background: color || image || repeat || attachment || position
+    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
